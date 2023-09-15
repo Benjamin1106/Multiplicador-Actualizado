@@ -1,0 +1,11 @@
+
+node_module/
+
+
+/salida/*.txt
+
+
+
+aqui hacemos que al guardar cosas en nuestro git hub ignoremos algunas cosas.
+
+los modulos de node se recuperan con npm i
