@@ -9,7 +9,7 @@ const  argv  = require('./config/yargs');
 
 
 
-// console.log(argv);
+console.log(argv);
 
 
 // console.log('base: yargs', argv.b );

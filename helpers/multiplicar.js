@@ -35,25 +35,24 @@ const crearArchivo = async( base = 5, listar = false, hasta = 3 ) => {
 
 try {
 
-    let salida, consola = '';
+    let salida = '';
+    let consola = '';
+
 
     for (let i = 1; i <= `${ hasta }`; i++) {
-    salida += `${ base } x ${ i } = ${ base * i }\n`;
-    consola += `${ base } ${ 'x'.yellow } ${ i } ${ '='.blue } ${ base * i }\n`;    
-    
-    }
+        salida += `${ base } x ${ i } = ${ base * i }\n`;
+        consola += `${ base } ${ 'x'.yellow } ${ i } ${ '='.blue } ${ base * i }\n`;    
+        }
     if ( listar === true ) {
         console.clear()
         console.log('================')
         console.log(` Tabla del ${ base } `);
         console.log('================'); 
         console.log( consola );
-    }
-
-
+    } 
 
 fs.writeFileSync( `./salida/tabla-${ base }.txt`, salida); 
-return`tabla-${ base }.txt creado`;
+return`tabla-${ base }.txt creada`;
 
 } catch (error) {
     throw error;
